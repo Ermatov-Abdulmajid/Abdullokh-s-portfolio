@@ -1613,8 +1613,13 @@ select:-webkit-autofill:focus {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    color: var(--color);
+    margin: 0 0 20px 0;
   }
 
+  .site-header--open .sitenav__link {
+    color: var(--color);
+  }
 
   .site-header--open .site-header__button-menu {
     display: none;
