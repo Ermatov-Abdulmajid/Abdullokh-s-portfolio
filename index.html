@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdullokh's portfolio</title>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600;700&family=Inter:wght@400;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="light-mode">
+
+  <header class="site-header">
+    <div class="site-header__container container">
+
+      <a class="site-header__logo-wrapper" href="index.html">
+        <svg class="site-header__logo" xmlns="http://www.w3.org/2000/svg" width="129" height="48" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M0 44.183h11.85l44.745-31.477V37.09l-10.772-4.965-6.05 4.345 22.788 10.995h3.67L124.773 6.17h-12.271l-49.83 35.28-.11.174V.382L0 44.182Zm95.604-11.958 5.715-3.711 26.767 18.763h-11.577L95.604 32.224Z" clip-rule="evenodd"/></svg>
+      </a>
+
+      <!-- MENU -->
+      <button class="site-header__button-menu site-header__buttons">
+        <svg class="site-header__menu-icon" xmlns="http://www.w3.org/2000/svg" width="51" height="47" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M42.5 11.75h-34m34 11.75H21.25M42.5 35.25H31.875"/></svg>
+      </button>
+
+      <div class="site-header__inner df">
+
+        <button class="site-header__button-close site-header__buttons">
+          <img draggable="false" class="site-header__button-icon" src="img/close-icon.svg" alt="" width="51" height="47">
+        </button>
+
+        <!-- SITENAV -->
+        <nav class="sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#skills">Skills</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#experience">Experience</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#courses">Courses</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#projects">Projects</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#road">Roadmap</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#blog">Blog</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#lessons">Lesson</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="site-header__modes">
+          <!-- LIGHT-MODE -->
+          <button class="site-header__light-button site-header__button" type="button">
+            <svg class="site-header__icon-button light-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" clip-path="url(#a)"><path d="M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0-16v2m0 18v2M4.219 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2m18 0h2M4.219 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></g><defs><clipPath id="a"><path fill="currentColor" d="M0 0h24v24H0z"/></clipPath></defs></svg>
+          </button>
+
+          <!-- DARK-BUTTON -->
+          <button class="site-header__dark-button site-header__button" type="button">
+            <svg class="site-header__icon-button dark-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M19 10.79A9 9 0 1 1 9.21 1 7 7 0 0 0 19 10.79Z"/></svg>
+          </button>
+
+          <!-- SETTINGS -->
+          <button class="site-header__settings-button site-header__button" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+              <g clip-path="url(#clip0_255_5431)">
+                <path d="M13.4014 16.6112C15.1742 16.6112 16.6114 15.174 16.6114 13.4011C16.6114 11.6281 15.1742 10.1909 13.4014 10.1909C11.6286 10.1909 10.1914 11.6281 10.1914 13.4011C10.1914 15.174 11.6286 16.6112 13.4014 16.6112Z" stroke="#CBC7C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21.3189 16.611C21.1764 16.9338 21.1339 17.2918 21.1969 17.6389C21.2598 17.986 21.4253 18.3063 21.672 18.5585L21.7362 18.6227C21.9351 18.8215 22.093 19.0575 22.2007 19.3173C22.3084 19.5771 22.3638 19.8556 22.3638 20.1369C22.3638 20.4181 22.3084 20.6966 22.2007 20.9564C22.093 21.2162 21.9351 21.4522 21.7362 21.651C21.5374 21.85 21.3014 22.0078 21.0416 22.1155C20.7818 22.2232 20.5033 22.2786 20.2221 22.2786C19.9409 22.2786 19.6624 22.2232 19.4026 22.1155C19.1428 22.0078 18.9068 21.85 18.7081 21.651L18.6439 21.5868C18.3917 21.3401 18.0714 21.1746 17.7243 21.1117C17.3772 21.0487 17.0192 21.0912 16.6965 21.2337C16.38 21.3693 16.1101 21.5945 15.92 21.8816C15.7299 22.1687 15.6278 22.5051 15.6265 22.8494V23.0313C15.6265 23.5989 15.401 24.1433 14.9997 24.5446C14.5983 24.946 14.054 25.1714 13.4865 25.1714C12.9189 25.1714 12.3746 24.946 11.9733 24.5446C11.5719 24.1433 11.3465 23.5989 11.3465 23.0313V22.935C11.3382 22.5809 11.2235 22.2374 11.0174 21.9492C10.8114 21.661 10.5233 21.4415 10.1909 21.3193C9.86813 21.1768 9.51013 21.1343 9.16303 21.1973C8.81593 21.2602 8.49564 21.4257 8.24346 21.6724L8.17926 21.7366C7.98051 21.9356 7.74449 22.0934 7.4847 22.2011C7.22491 22.3088 6.94644 22.3642 6.66521 22.3642C6.38398 22.3642 6.10551 22.3088 5.84572 22.2011C5.58593 22.0934 5.34991 21.9356 5.15116 21.7366C4.95219 21.5378 4.79435 21.3018 4.68665 21.042C4.57896 20.7822 4.52353 20.5037 4.52353 20.2225C4.52353 19.9412 4.57896 19.6627 4.68665 19.4029C4.79435 19.1431 4.95219 18.9071 5.15116 18.7083L5.21536 18.6441C5.46203 18.392 5.62751 18.0716 5.69044 17.7245C5.75338 17.3774 5.71089 17.0194 5.56846 16.6967C5.43282 16.3802 5.20761 16.1102 4.92054 15.9201C4.63347 15.73 4.29707 15.628 3.95276 15.6266H3.77086C3.2033 15.6266 2.65898 15.4011 2.25765 14.9998C1.85632 14.5984 1.63086 14.0541 1.63086 13.4865C1.63086 12.9189 1.85632 12.3746 2.25765 11.9732C2.65898 11.5719 3.2033 11.3464 3.77086 11.3464H3.86716C4.22132 11.3381 4.5648 11.2235 4.85295 11.0174C5.14109 10.8113 5.36058 10.5233 5.48286 10.1908C5.62529 9.86801 5.66778 9.51 5.60484 9.16288C5.54191 8.81576 5.37643 8.49546 5.12976 8.24327L5.06556 8.17907C4.86659 7.98031 4.70875 7.74428 4.60105 7.48448C4.49336 7.22467 4.43793 6.94619 4.43793 6.66495C4.43793 6.38371 4.49336 6.10522 4.60105 5.84542C4.70875 5.58562 4.86659 5.34959 5.06556 5.15083C5.26431 4.95185 5.50033 4.794 5.76012 4.6863C6.01991 4.5786 6.29838 4.52317 6.57961 4.52317C6.86084 4.52317 7.13931 4.5786 7.3991 4.6863C7.65889 4.794 7.89491 4.95185 8.09366 5.15083L8.15786 5.21503C8.41004 5.46172 8.73033 5.6272 9.07743 5.69014C9.42453 5.75308 9.78253 5.71059 10.1053 5.56815H10.1909C10.5073 5.43251 10.7772 5.20728 10.9674 4.9202C11.1575 4.63311 11.2595 4.2967 11.2609 3.95238V3.77047C11.2609 3.20288 11.4863 2.65854 11.8877 2.25719C12.289 1.85584 12.8333 1.63037 13.4009 1.63037C13.9684 1.63037 14.5127 1.85584 14.9141 2.25719C15.3154 2.65854 15.5409 3.20288 15.5409 3.77047V3.86677C15.5422 4.2111 15.6443 4.54751 15.8344 4.83459C16.0245 5.12168 16.2944 5.3469 16.6109 5.48254C16.9336 5.62498 17.2916 5.66747 17.6387 5.60454C17.9858 5.5416 18.3061 5.37611 18.5583 5.12943L18.6225 5.06523C18.8212 4.86625 19.0572 4.7084 19.317 4.6007C19.5768 4.493 19.8553 4.43756 20.1365 4.43756C20.4177 4.43756 20.6962 4.493 20.956 4.6007C21.2158 4.7084 21.4518 4.86625 21.6506 5.06523C21.8495 5.26398 22.0074 5.50001 22.1151 5.75982C22.2228 6.01962 22.2782 6.2981 22.2782 6.57934C22.2782 6.86059 22.2228 7.13907 22.1151 7.39887C22.0074 7.65868 21.8495 7.89471 21.6506 8.09346L21.5864 8.15767C21.3397 8.40985 21.1742 8.73016 21.1113 9.07728C21.0483 9.4244 21.0908 9.78241 21.2333 10.1052V10.1908C21.3689 10.5072 21.5941 10.7772 21.8812 10.9673C22.1683 11.1574 22.5046 11.2594 22.849 11.2608H23.0309C23.5984 11.2608 24.1427 11.4863 24.5441 11.8876C24.9454 12.289 25.1709 12.8333 25.1709 13.4009C25.1709 13.9685 24.9454 14.5128 24.5441 14.9142C24.1427 15.3155 23.5984 15.541 23.0309 15.541H22.9346C22.5902 15.5424 22.2539 15.6444 21.9668 15.8345C21.6797 16.0246 21.4545 16.2946 21.3189 16.611Z" stroke="#CBC7C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_255_5431">
+                  <rect width="25.68" height="25.6812" fill="currentColor" transform="translate(0.560547 0.560547)"/>
+                </clipPath>
+              </defs>
+            </svg>
+
+          </button>
+        </div>
+
+      </div>
+
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <main class="main-content">
+    <section class="hero">
+      <div class="hero__container container">
+        <div class="hero__wrapper1">
+          <span class="hero__span">Hi I am,</span>
+          <h1 class="hero__title">Abdullokh Khamzayev</h1>
+          <h2 class="hero__heading">Web/Frontend Developer</h2>
+          <p class="hero__info">
+            Lorem ipsum dolor sit amet consectetur. Leo aliquet ipsum
+            suspendisse nibh diam. Egestas turpis urna phasellus quam
+            et neque. Justo est tincidunt non neque nuncnunc vulputate
+            convallis. Amet sit auctor dui tortor aliquam sed neque velit
+            elementum. Ridiculus a sit morbi adipiscing. Suspendisse
+            lorem porta feugiat massa scelerisque venenatis ultrices.........
+          </p>
+
+          <div class="hero__wrapper-inner">
+            <a class="hero__button1 hero__button button" href="#">Download resume</a>
+            <a class="hero__button2 hero__button button" href="#">To learn more</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- NUMBER-STATISTIC -->
+    <section class="number-statistic">
+      <div class="number-statistic__container container">
+        <div class="number-statistic__list">
+
+          <div class="number-statistic__list-inner1 number-statistic__list-inner">
+            <!-- ITEM-1 -->
+            <div class="number-statistic__item number-statistic__item1">
+              <h4 class="number-statistic__title number-statistic__title1">10+</h4>
+              <p class="number-statistic__text">Projects</p>
+            </div>
+
+            <!-- ITEM-2 -->
+            <div class="number-statistic__item number-statistic__item2">
+              <h4 class="number-statistic__title number-statistic__title2">20+</h4>
+              <p class="number-statistic__text">Own projects</p>
+            </div>
+          </div>
+
+          <div class="number-statistic__list-inner2 number-statistic__list-inner">
+            <!-- ITEM-3 -->
+            <div class="number-statistic__item number-statistic__item3">
+              <h4 class="number-statistic__title number-statistic__title3">2+</h4>
+              <p class="number-statistic__text">Year experience</p>
+            </div>
+
+            <!-- ITEM-4 -->
+            <div class="number-statistic__item number-statistic__item4">
+              <h4 class="number-statistic__title number-statistic__title4">7+</h4>
+              <p class="number-statistic__text">Skills</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- EXPERIENCE -->
+    <div class="experience" id="experience">
+      <div class="experience__container container">
+        <h2 class="experience__title">Experience</h2>
+        <span class="experience__text">My knowledge</span>
+
+        <p class="experience__info">
+          Lorem ipsum dolor sit <b class="experience__b">amet consectetur</b>. Nam sociis auctor lacus nulla. Pulvinar
+          adipiscing ultricies sit lectus. Et vitae nulla vulputate ultrices risus lectus arcu ridiculus vulputate. Etiam
+          vestibulum non libero tortor massa at blandit ut. Placerat urna rhoncus commodo aliquam <b
+          class="experience__b">bibendum lorem</b>. Tincidunt justo scelerisque tellus velit. Elit tellus dolor pharetra
+          consectetur. Praesent interdum nunc tincidunt blandit id elit aliquam. Habitant nisl dapibus ac cras turpis
+          tincidunt. Pharetra condimentum nunc phasellus malesuada leo quis sed erat. Urna eget aliquet pulvinar amet id
+          dignissim fermentum. Fermentum rhoncus posuere lacus sit neque arcu. Velit et elit sed bibendum turpis interdum.
+          <b class="experience__b">Ut ipsum quis nisl id lobortis scelerisque.</b>
+        </p>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="skills" id="skills">
+      <div class="skills__container container df">
+        <h3 class="skills__title">My skills</h3>
+        <p class="skills__info">
+          The skills, tools and technologies I am really good at:
+        </p>
+
+
+        <div class="skills__list df">
+          <div class="skills__list-wrapper skills__list-wrapper1">
+            <!-- ITEM-1 -->
+            <div class="skills__item df">
+              <img draggable="false" class="skills__icon" src="img/icon-javscript.svg" alt="JavaSript" aria-label="JavaSript">
+              <span class="skills__item-name">Javascript</span>
+            </div>
+            <!-- ITEM-2 -->
+            <div class="skills__item df">
+              <img draggable="false" class="skills__icon" src="img/icon-bootstrap.svg" alt="Bootstrap" aria-label="Bootstrap">
+              <span class="skills__item-name">Bootstrap</span>
+            </div>
+            <!-- ITEM-3 -->
+            <div class="skills__item df">
+              <img draggable="false" class="skills__icon" src="img/icon-vuejs.svg" alt="VueJs" aria-label="VueJs">
+              <span class="skills__item-name">VueJs</span>
+            </div>
+            <!-- ITEM-4 -->
+            <div class="skills__item df">
+              <img draggable="false" class="skills__icon" src="img/icon-typescript.svg" alt="TypeScript" aria-label="TypeScript">
+              <span class="skills__item-name">Typescript</span>
+            </div>
+
+          </div>
+
+          <div class="skills__list-wrapper skills__list-wrapper2">
+            <!-- ITEM-5 -->
+            <div class="skills__item df">
+              <img draggable="false" class="skills__icon" src="img/icon-css.svg" alt="Css" aria-label="">
+              <span class="skills__item-name">CSS</span>
+            </div>
+            <!-- ITEM-6 -->
+            <div class="skills__item df">
+              <img draggable="false" class="skills__icon" src="img/icon-html.svg" alt="Html" aria-label="Html">
+              <span class="skills__item-name">HTML</span>
+            </div>
+            <!-- ITEM-7 -->
+            <div class="skills__item df">
+              <img draggable="false" class="skills__icon" src="img/icon-git.svg" alt="Git" aria-label="Git">
+              <span class="skills__item-name">Git</span>
+            </div>
+            <!-- ITEM-8 -->
+            <div class="skills__item df">
+              <img draggable="false" class="skills__icon" src="img/icon-react.svg" alt="React" aria-label="React">
+              <span class="skills__item-name">React</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- WORKING-COMPANY -->
+    <section class="working-company" id="working-company">
+      <div class="working-company__container container">
+        <h2 class="working-company__title">Working company</h2>
+
+        <div class="working-company__inner">
+          <div class="working-company__list df">
+            <div class="working-company__item df">
+              <img draggable="false" class="working-company__item-img" src="img/kadirov-img.png" alt="kadirov-group">
+              <h4 class="working-company__item-name">OOO The Kadirov Group</h4>
+              <p class="working-company__item-about">
+                Lorem ipsum dolor sit amet consectetur. Mauris in egestas auctor sed.
+              </p>
+              <div class="working-company__item-data df">
+                <!--  -->
+                <svg class="working-company__item-clock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6l4 2"/></svg>
+                From 12/24/2021 to 12/08/222
+              </div>
+              <a class="working-company__item-link" href="#">
+                Participating projects: 4
+              </a>
+            </div>
+
+            <!-- ITEM-2 -->
+            <div class="working-company__item df">
+              <img draggable="false" class="working-company__item-img" src="img/office-img.png" alt="kadirov-group">
+              <h4 class="working-company__item-name">Office Media crew</h4>
+              <p class="working-company__item-about">
+                Lorem ipsum dolor sit amet consectetur. Mauris in egestas auctor sed.
+              </p>
+
+              <div class="working-company__item-data df">
+                <svg class="working-company__item-clock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6l4 2"/></svg>
+                From 06/07/2023 to present
+              </div>
+
+              <a class="working-company__item-link" href="#">
+                Participating projects: 3
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- COURSES -->
+    <section class="courses" id="courses">
+      <div class="courses__container container df">
+        <h2 class="courses__title">Courses</h2>
+        <p class="courses__info">My completed courses</p>
+        <p class="courses__text">
+          Lorem ipsum dolor sit amet consectetur. Interdum a sed mauris elementum vitae urna posuere pulvinar sodales. Viverra id cursus ut tempor nunc.
+        </p>
+
+        <div class="courses__inner df">
+          <ul class="courses__list df">
+
+            <li class="courses__item courses__item-active">
+              <img draggable="false" class="courses__item-img" src="img/courses-img1.svg" alt="courses" width="367" height="277">
+            </li>
+
+            <li class="courses__item">
+              <img draggable="false" class="courses__item-img" src="img/courses-img2.svg" alt="courses" width="367" height="277">
+            </li>
+
+            <li class="courses__item">
+              <img draggable="false" class="courses__item-img" src="img/courses-img3.svg" alt="courses" width="367" height="277">
+            </li>
+
+          </ul>
+
+          <button class="courses__item-button courses__item-button-right df" type="button">
+            <img draggable="false" class="courses-icon" src="img/icon-right.svg" alt="">
+          </button>
+
+          <button class="courses__item-button courses__item-button-left df" type="button">
+            <img draggable="false" class="courses-icon" src="img/icon-left.svg" alt="">
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATE -->
+    <section class="certificate" id="certificate">
+      <div class="certificate__container container df">
+        <h2 class="certificate__title">Certificate</h2>
+
+        <div class="certificate__inner df">
+          <ul class="certificate__list df">
+
+            <li class="certificate__item df">
+              <img draggable="false" class="certificate__item-img" src="img/certificate-img1.svg" alt="certificate of graduation" width="277" height="216">
+            </li>
+
+            <li class="certificate__item certificate__item-big df certificate__item-active">
+              <img draggable="false" class="certificate__item-icon" src="img/Medallions.svg" alt="Medallions" width="40" height="40">
+              <img draggable="false" class="certificate__item-img certificate__item-img-big" src="img/certificate-img2.svg" alt="certificate completion"
+              width="323" height="242">
+            </li>
+
+            <li class="certificate__item df">
+              <img draggable="false" class="certificate__item-img" src="img/certificate-img3.svg" alt="certificate of graduation" width="277" height="216">
+            </li>
+
+          </ul>
+
+          <button class="courses__item-button courses__item-button-right df" type="button">
+            <img draggable="false" class="courses-icon" src="img/icon-right.svg" alt="">
+          </button>
+
+          <button class="courses__item-button courses__item-button-left df" type="button">
+            <img draggable="false" class="courses-icon" src="img/icon-left.svg" alt="">
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <div class="projects__container container">
+
+        <div class="projects__inner df">
+          <h3 class="projects__title">Projects</h3>
+          <span class="projects__info">All my projects</span>
+        </div>
+
+        <ul class="projects__list df">
+          <!-- 1 -->
+          <li class="projects__item df">
+            <img draggable="false" class="projects__item-img" src="img/projects-item-img.svg" alt="item-img" width="368" height="192">
+
+            <div class="projects__item-about">
+              <h4 class="projects__item-title">Project Tile goes here</h4>
+              <p class="projects__item-text">This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</p>
+              <span class="projects__item-span">
+                Tech stack :<b class="projects__item-b"> HTML , JavaScript, SASS, React</b>
+              </span>
+              <div class="projects__item-wrapper">
+                <div class="projects__item-inner projects__item-inner1">
+                  <svg class="projects__item-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.234" d="M9.872 6.971c-.595-.528-1.401-.825-2.242-.825-.84 0-1.647.297-2.242.825L3.146 8.964c-.595.529-.93 1.246-.93 1.993 0 .748.335 1.465.93 1.993.594.529 1.4.826 2.242.826.84 0 1.647-.297 2.242-.826l1.12-.996"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.234" d="M7.63 8.964c.596.528 1.402.825 2.243.825.84 0 1.647-.297 2.242-.825l2.242-1.993c.595-.528.929-1.245.929-1.993 0-.747-.334-1.464-.929-1.993-.595-.528-1.401-.825-2.242-.825s-1.648.297-2.242.825l-1.121.997"/></svg>
+                  <a class="projects__item-link" href="#">Live Preview</a>
+                </div>
+
+                <div class="projects__item-inner">
+                  <svg class="projects__item-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><g clip-path="url(#a)"><path fill="currentColor" fill-rule="evenodd" d="M7.957.224A7.742 7.742 0 0 0 .213 7.968a7.739 7.739 0 0 0 5.295 7.347c.387.068.532-.164.532-.368 0-.184-.01-.793-.01-1.442-1.945.358-2.449-.474-2.603-.91-.088-.223-.465-.91-.794-1.094-.271-.145-.658-.503-.01-.513.61-.01 1.046.562 1.19.794.698 1.171 1.81.842 2.256.639.068-.503.271-.842.494-1.036-1.723-.193-3.524-.861-3.524-3.823 0-.842.3-1.54.794-2.082-.077-.193-.348-.987.078-2.052 0 0 .648-.203 2.13.794a7.186 7.186 0 0 1 1.935-.261c.658 0 1.317.087 1.936.261 1.481-1.007 2.13-.794 2.13-.794.425 1.065.155 1.859.077 2.053.494.542.794 1.229.794 2.08 0 2.972-1.81 3.63-3.533 3.824.28.242.522.707.522 1.433 0 1.036-.01 1.868-.01 2.13 0 .203.146.445.533.367a7.756 7.756 0 0 0 5.276-7.347A7.742 7.742 0 0 0 7.957.224Z" clip-rule="evenodd"/></g><defs><clipPath id="a"><path fill="#fff" d="M.213.225H15.7v15.488H.213z"/></clipPath></defs></svg>
+                  <a class="projects__item-link" href="#">Live Preview</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- 2 -->
+          <li class="projects__item df">
+            <img draggable="false" class="projects__item-img" src="img/projects-item-img.svg" alt="item-img" width="368" height="192">
+            <div class="projects__item-about">
+              <h4 class="projects__item-title">Project Tile goes here</h4>
+              <p class="projects__item-text">This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content
+              </p>
+              <span class="projects__item-span">
+                Tech stack :<b class="projects__item-b"> HTML , JavaScript, SASS, React</b>
+              </span>
+              <div class="projects__item-wrapper">
+                <div class="projects__item-inner projects__item-inner1">
+                  <svg class="projects__item-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.234" d="M9.872 6.971c-.595-.528-1.401-.825-2.242-.825-.84 0-1.647.297-2.242.825L3.146 8.964c-.595.529-.93 1.246-.93 1.993 0 .748.335 1.465.93 1.993.594.529 1.4.826 2.242.826.84 0 1.647-.297 2.242-.826l1.12-.996"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.234" d="M7.63 8.964c.596.528 1.402.825 2.243.825.84 0 1.647-.297 2.242-.825l2.242-1.993c.595-.528.929-1.245.929-1.993 0-.747-.334-1.464-.929-1.993-.595-.528-1.401-.825-2.242-.825s-1.648.297-2.242.825l-1.121.997"/></svg>
+                  <a class="projects__item-link" href="#">Live Preview</a>
+                </div>
+                <div class="projects__item-inner">
+                  <svg class="projects__item-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><g clip-path="url(#a)"><path fill="currentColor" fill-rule="evenodd" d="M7.957.224A7.742 7.742 0 0 0 .213 7.968a7.739 7.739 0 0 0 5.295 7.347c.387.068.532-.164.532-.368 0-.184-.01-.793-.01-1.442-1.945.358-2.449-.474-2.603-.91-.088-.223-.465-.91-.794-1.094-.271-.145-.658-.503-.01-.513.61-.01 1.046.562 1.19.794.698 1.171 1.81.842 2.256.639.068-.503.271-.842.494-1.036-1.723-.193-3.524-.861-3.524-3.823 0-.842.3-1.54.794-2.082-.077-.193-.348-.987.078-2.052 0 0 .648-.203 2.13.794a7.186 7.186 0 0 1 1.935-.261c.658 0 1.317.087 1.936.261 1.481-1.007 2.13-.794 2.13-.794.425 1.065.155 1.859.077 2.053.494.542.794 1.229.794 2.08 0 2.972-1.81 3.63-3.533 3.824.28.242.522.707.522 1.433 0 1.036-.01 1.868-.01 2.13 0 .203.146.445.533.367a7.756 7.756 0 0 0 5.276-7.347A7.742 7.742 0 0 0 7.957.224Z" clip-rule="evenodd"/></g><defs><clipPath id="a"><path fill="#fff" d="M.213.225H15.7v15.488H.213z"/></clipPath></defs></svg>
+                  <a class="projects__item-link" href="#">Live Preview</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- 3 -->
+          <li class="projects__item df">
+            <img draggable="false" class="projects__item-img" src="img/projects-item-img.svg" alt="item-img" width="368" height="192">
+            <div class="projects__item-about">
+              <h4 class="projects__item-title">Project Tile goes here</h4>
+              <p class="projects__item-text">This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</p>
+              <span class="projects__item-span">
+                Tech stack :<b class="projects__item-b"> HTML , JavaScript, SASS, React</b>
+              </span>
+              <div class="projects__item-wrapper">
+                <div class="projects__item-inner projects__item-inner1">
+                  <svg class="projects__item-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.234" d="M9.872 6.971c-.595-.528-1.401-.825-2.242-.825-.84 0-1.647.297-2.242.825L3.146 8.964c-.595.529-.93 1.246-.93 1.993 0 .748.335 1.465.93 1.993.594.529 1.4.826 2.242.826.84 0 1.647-.297 2.242-.826l1.12-.996"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.234" d="M7.63 8.964c.596.528 1.402.825 2.243.825.84 0 1.647-.297 2.242-.825l2.242-1.993c.595-.528.929-1.245.929-1.993 0-.747-.334-1.464-.929-1.993-.595-.528-1.401-.825-2.242-.825s-1.648.297-2.242.825l-1.121.997"/></svg>
+                  <a class="projects__item-link" href="#">Live Preview</a>
+                </div>
+                <div class="projects__item-inner">
+                  <svg class="projects__item-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><g clip-path="url(#a)"><path fill="currentColor" fill-rule="evenodd" d="M7.957.224A7.742 7.742 0 0 0 .213 7.968a7.739 7.739 0 0 0 5.295 7.347c.387.068.532-.164.532-.368 0-.184-.01-.793-.01-1.442-1.945.358-2.449-.474-2.603-.91-.088-.223-.465-.91-.794-1.094-.271-.145-.658-.503-.01-.513.61-.01 1.046.562 1.19.794.698 1.171 1.81.842 2.256.639.068-.503.271-.842.494-1.036-1.723-.193-3.524-.861-3.524-3.823 0-.842.3-1.54.794-2.082-.077-.193-.348-.987.078-2.052 0 0 .648-.203 2.13.794a7.186 7.186 0 0 1 1.935-.261c.658 0 1.317.087 1.936.261 1.481-1.007 2.13-.794 2.13-.794.425 1.065.155 1.859.077 2.053.494.542.794 1.229.794 2.08 0 2.972-1.81 3.63-3.533 3.824.28.242.522.707.522 1.433 0 1.036-.01 1.868-.01 2.13 0 .203.146.445.533.367a7.756 7.756 0 0 0 5.276-7.347A7.742 7.742 0 0 0 7.957.224Z" clip-rule="evenodd"/></g><defs><clipPath id="a"><path fill="#fff" d="M.213.225H15.7v15.488H.213z"/></clipPath></defs></svg>
+                  <a class="projects__item-link" href="#">Live Preview</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- 4 -->
+          <li class="projects__item df">
+            <img draggable="false" class="projects__item-img" src="img/projects-item-img.svg" alt="item-img" width="368" height="192">
+            <div class="projects__item-about">
+              <h4 class="projects__item-title">Project Tile goes here</h4>
+              <p class="projects__item-text">This is sample project description random things are here This is
+                sample project lorem ipsum generator for dummy content
+              </p>
+              <span class="projects__item-span">
+                Tech stack :<b class="projects__item-b"> HTML , JavaScript, SASS, React</b>
+              </span>
+              <div class="projects__item-wrapper">
+                <div class="projects__item-inner projects__item-inner1">
+                  <svg class="projects__item-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.234" d="M9.872 6.971c-.595-.528-1.401-.825-2.242-.825-.84 0-1.647.297-2.242.825L3.146 8.964c-.595.529-.93 1.246-.93 1.993 0 .748.335 1.465.93 1.993.594.529 1.4.826 2.242.826.84 0 1.647-.297 2.242-.826l1.12-.996"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.234" d="M7.63 8.964c.596.528 1.402.825 2.243.825.84 0 1.647-.297 2.242-.825l2.242-1.993c.595-.528.929-1.245.929-1.993 0-.747-.334-1.464-.929-1.993-.595-.528-1.401-.825-2.242-.825s-1.648.297-2.242.825l-1.121.997"/></svg>
+                  <a class="projects__item-link" href="#">Live Preview</a>
+                </div>
+                <div class="projects__item-inner">
+                  <svg class="projects__item-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><g clip-path="url(#a)"><path fill="currentColor" fill-rule="evenodd" d="M7.957.224A7.742 7.742 0 0 0 .213 7.968a7.739 7.739 0 0 0 5.295 7.347c.387.068.532-.164.532-.368 0-.184-.01-.793-.01-1.442-1.945.358-2.449-.474-2.603-.91-.088-.223-.465-.91-.794-1.094-.271-.145-.658-.503-.01-.513.61-.01 1.046.562 1.19.794.698 1.171 1.81.842 2.256.639.068-.503.271-.842.494-1.036-1.723-.193-3.524-.861-3.524-3.823 0-.842.3-1.54.794-2.082-.077-.193-.348-.987.078-2.052 0 0 .648-.203 2.13.794a7.186 7.186 0 0 1 1.935-.261c.658 0 1.317.087 1.936.261 1.481-1.007 2.13-.794 2.13-.794.425 1.065.155 1.859.077 2.053.494.542.794 1.229.794 2.08 0 2.972-1.81 3.63-3.533 3.824.28.242.522.707.522 1.433 0 1.036-.01 1.868-.01 2.13 0 .203.146.445.533.367a7.756 7.756 0 0 0 5.276-7.347A7.742 7.742 0 0 0 7.957.224Z" clip-rule="evenodd"/></g><defs><clipPath id="a"><path fill="#fff" d="M.213.225H15.7v15.488H.213z"/></clipPath></defs></svg>
+                  <a class="projects__item-link" href="#">Live Preview</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- 5 -->
+          <li class="projects__item df">
+            <img draggable="false" class="projects__item-img" src="img/projects-item-img.svg" alt="item-img" width="368" height="192">
+            <div class="projects__item-about">
+              <h4 class="projects__item-title">Project Tile goes here</h4>
+              <p class="projects__item-text">This is sample project description random things are here in description This is
+                sample project lorem ipsum generator for dummy content</p>
+                <span class="projects__item-span">
+                  Tech stack :<b class="projects__item-b"> HTML , JavaScript, SASS, React</b>
+                </span>
+                <div class="projects__item-wrapper">
+                  <div class="projects__item-inner projects__item-inner1">
+                    <svg class="projects__item-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.234" d="M9.872 6.971c-.595-.528-1.401-.825-2.242-.825-.84 0-1.647.297-2.242.825L3.146 8.964c-.595.529-.93 1.246-.93 1.993 0 .748.335 1.465.93 1.993.594.529 1.4.826 2.242.826.84 0 1.647-.297 2.242-.826l1.12-.996"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.234" d="M7.63 8.964c.596.528 1.402.825 2.243.825.84 0 1.647-.297 2.242-.825l2.242-1.993c.595-.528.929-1.245.929-1.993 0-.747-.334-1.464-.929-1.993-.595-.528-1.401-.825-2.242-.825s-1.648.297-2.242.825l-1.121.997"/></svg>
+                    <a class="projects__item-link" href="#">Live Preview</a>
+                  </div>
+                  <div class="projects__item-inner">
+                    <svg class="projects__item-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><g clip-path="url(#a)"><path fill="currentColor" fill-rule="evenodd" d="M7.957.224A7.742 7.742 0 0 0 .213 7.968a7.739 7.739 0 0 0 5.295 7.347c.387.068.532-.164.532-.368 0-.184-.01-.793-.01-1.442-1.945.358-2.449-.474-2.603-.91-.088-.223-.465-.91-.794-1.094-.271-.145-.658-.503-.01-.513.61-.01 1.046.562 1.19.794.698 1.171 1.81.842 2.256.639.068-.503.271-.842.494-1.036-1.723-.193-3.524-.861-3.524-3.823 0-.842.3-1.54.794-2.082-.077-.193-.348-.987.078-2.052 0 0 .648-.203 2.13.794a7.186 7.186 0 0 1 1.935-.261c.658 0 1.317.087 1.936.261 1.481-1.007 2.13-.794 2.13-.794.425 1.065.155 1.859.077 2.053.494.542.794 1.229.794 2.08 0 2.972-1.81 3.63-3.533 3.824.28.242.522.707.522 1.433 0 1.036-.01 1.868-.01 2.13 0 .203.146.445.533.367a7.756 7.756 0 0 0 5.276-7.347A7.742 7.742 0 0 0 7.957.224Z" clip-rule="evenodd"/></g><defs><clipPath id="a"><path fill="#fff" d="M.213.225H15.7v15.488H.213z"/></clipPath></defs></svg>
+                    <a class="projects__item-link" href="#">Live Preview</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- 6 -->
+            <li class="projects__item df">
+              <img draggable="false" class="projects__item-img" src="img/projects-item-img.svg" alt="item-img" width="368" height="192">
+              <div class="projects__item-about">
+                <h4 class="projects__item-title">Project Tile goes here</h4>
+                <p class="projects__item-text">This is sample project description random things are here in description This is
+                  sample project lorem ipsum generator for dummy content</p>
+                  <span class="projects__item-span">
+                    Tech stack :<b class="projects__item-b"> HTML , JavaScript, SASS, React</b>
+                  </span>
+                  <div class="projects__item-wrapper">
+                    <div class="projects__item-inner projects__item-inner1">
+                      <svg class="projects__item-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.234" d="M9.872 6.971c-.595-.528-1.401-.825-2.242-.825-.84 0-1.647.297-2.242.825L3.146 8.964c-.595.529-.93 1.246-.93 1.993 0 .748.335 1.465.93 1.993.594.529 1.4.826 2.242.826.84 0 1.647-.297 2.242-.826l1.12-.996"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.234" d="M7.63 8.964c.596.528 1.402.825 2.243.825.84 0 1.647-.297 2.242-.825l2.242-1.993c.595-.528.929-1.245.929-1.993 0-.747-.334-1.464-.929-1.993-.595-.528-1.401-.825-2.242-.825s-1.648.297-2.242.825l-1.121.997"/></svg>
+                      <a class="projects__item-link" href="#">Live Preview</a>
+                    </div>
+                    <div class="projects__item-inner">
+                      <svg class="projects__item-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><g clip-path="url(#a)"><path fill="currentColor" fill-rule="evenodd" d="M7.957.224A7.742 7.742 0 0 0 .213 7.968a7.739 7.739 0 0 0 5.295 7.347c.387.068.532-.164.532-.368 0-.184-.01-.793-.01-1.442-1.945.358-2.449-.474-2.603-.91-.088-.223-.465-.91-.794-1.094-.271-.145-.658-.503-.01-.513.61-.01 1.046.562 1.19.794.698 1.171 1.81.842 2.256.639.068-.503.271-.842.494-1.036-1.723-.193-3.524-.861-3.524-3.823 0-.842.3-1.54.794-2.082-.077-.193-.348-.987.078-2.052 0 0 .648-.203 2.13.794a7.186 7.186 0 0 1 1.935-.261c.658 0 1.317.087 1.936.261 1.481-1.007 2.13-.794 2.13-.794.425 1.065.155 1.859.077 2.053.494.542.794 1.229.794 2.08 0 2.972-1.81 3.63-3.533 3.824.28.242.522.707.522 1.433 0 1.036-.01 1.868-.01 2.13 0 .203.146.445.533.367a7.756 7.756 0 0 0 5.276-7.347A7.742 7.742 0 0 0 7.957.224Z" clip-rule="evenodd"/></g><defs><clipPath id="a"><path fill="#fff" d="M.213.225H15.7v15.488H.213z"/></clipPath></defs></svg>
+                      <a class="projects__item-link" href="#">Live Preview</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ROAD -->
+        <div class="road" id="road">
+          <div class="road__container">
+            <h3 class="road__title">RoadMap</h3>
+            <picture>
+              <source media="(max-width: 769px)" srcset="img/road-img-tablet.png">
+              <img draggable="false" class="road__img" src="img/road.png" alt="">
+            </picture>
+          </div>
+        </div>
+
+        <!-- BLOG -->
+        <section class="blog" id="blog">
+          <div class="blog__container container">
+            <h3 class="blog__title">Blog</h3>
+
+            <div class="blog__list df">
+              <!-- 1 -->
+              <div class="blog__list-df">
+                <div class="blog__item item df">
+                  <img draggable="false" class="item__img" src="img/blog-img1.png" alt="blog-img1" width="316" height="229">
+
+                  <div class="item__inner df">
+
+                    <div class="item__about-wrapper df">
+                      <span class="item__about-text item__about-text1">lifestyle</span>
+                      <span class="item__about-text item__about-text2">New</span>
+                    </div>
+
+                    <p class="item__title">
+                      set video playback speed with javascript
+                    </p>
+
+                    <div class="item__info-container item-info df">
+
+                      <div class="item__info-container-div df">
+                        <img draggable="false" class="item__info-img item__info-img-user" src="img/user-icon.svg" alt="user" width="18" height="18">
+                        <p class="item__info-text">Botir.Y</p>
+                      </div>
+
+                      <div class="item__info-container-div df">
+                        <img draggable="false" class="item__info-img item__info-img-calendar" src="img/icon-calendar.svg" alt="Calendar" width="9" height="10">
+                        <p class="item__info-text">02 december 2023</p>
+                      </div>
+
+                      <div class="item__info-container-div df">
+                        <img draggable="false" class="item__info-img item__info-img-time" src="img/icon-time.svg" alt="time" width="10" height="10">
+                        <p class="item__info-text">3 min</p>
+                      </div>
+
+                    </div>
+
+                    <p class="item__text">
+                      Did you come here for something in particular or just general Riker-bashing
+                    </p>
+                  </div>
+                </div>
+
+
+                <!-- 2 -->
+                <div class="blog__item item df">
+                  <img draggable="false" class="item__img" src="img/blog-img2.png" alt="blog-img2" width="316" height="229">
+                  <div class="item__inner df">
+
+                    <div class="item__about-wrapper df">
+                      <span class="item__about-text">lifestyle</span>
+                    </div>
+
+                    <p class="item__title">
+                      set video playback speed with javascript
+                    </p>
+
+                    <div class="item__info-container item-info df">
+
+                      <div class="item__info-container-div df">
+                        <img draggable="false" class="item__info-img item__info-img-user" src="img/user-icon.svg" alt="user" width="18" height="18">
+                        <p class="item__info-text">Majid.E</p>
+                      </div>
+
+                      <div class="item__info-container-div df">
+                        <img draggable="false" class="item__info-img item__info-img-calendar" src="img/icon-calendar.svg" alt="Calendar" width="9" height="10">
+                        <p class="item__info-text">22 January 2024</p>
+                      </div>
+
+                      <div class="item__info-container-div df">
+                        <img draggable="false" class="item__info-img item__info-img-time" src="img/icon-time.svg" alt="time" width="10" height="10">
+                        <p class="item__info-text">7 min</p>
+                      </div>
+
+                    </div>
+                    <p class="item__text">
+                      Did you come here for something in particular or just general Riker-bashing
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3 -->
+              <div class="blog__big-item">
+                <img draggable="false" class="item__img-big" src="img/blog-img3.svg" alt="blog-img2" width="421" height="285">
+                <div class="item__inner df">
+                  <div class="item__about-wrapper df">
+                    <span class="item__about-text item__about-text-big">Work</span>
+                  </div>
+                  <p class="item__title-big">
+                    set video playback speed with javascript
+                  </p>
+                  <div class="item__info-container item-info df">
+                    <div class="item__info-container-div df">
+                      <img draggable="false" class="item__info-img item__info-img-user" src="img/user-icon.svg" alt="user" width="18" height="18">
+                      <p class="item__info-text item__info-text-big">Majid.E</p>
+                    </div>
+                    <div class="item__info-container-div df">
+                      <img draggable="false" class="item__info-img item__info-img-calendar" src="img/icon-calendar.svg" alt="Calendar" width="9" height="10">
+                      <p class="item__info-text item__info-text-big">22 January 2024</p>
+                    </div>
+                    <div class="item__info-container-div df">
+                      <img draggable="false" class="item__info-img item__info-img-time" src="img/icon-time.svg" alt="time" width="10" height="10">
+                      <p class="item__info-text item__info-text-big">7 min</p>
+                    </div>
+                  </div>
+                  <p class="item__text item__text-big">
+                    Did you come here for something in particular or just general Riker-bashing
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- LESSONS -->
+        <section class="lessons" id="lessons">
+          <div class="lessons__container container df">
+
+            <h3 class="lessons__title">Lessons</h3>
+
+            <ul class="lessons__list df">
+              <!-- 1 -->
+              <li class="lessons__item">
+                <img class="lessons__img lessons__img-op" src="img/Mask group.png" alt="vidio">
+                <div class="lessons__item-inner">
+                  <span class="lessons__item-num">Lesson 1</span>
+
+                  <hr class="lessons__hr">
+
+                  <h4 class="lessons__item-title">
+                    Powerful mental tools to help you master tough subjects
+                  </h4>
+                  <p class="lessons__item-about">
+                    Lorem ipsum dolor sit amet consectetur. Elementum sed malesuada molestie facilisis enim lectus gravida. Proin vel egestas elementum erat accumsan non tortor est quis. Egestas tellus feugiat odio dictumst. Sit a enim suspendisse euismod.
+                  </p>
+                </div>
+              </li>
+
+              <!-- 2 -->
+              <li class="lessons__item">
+                <img class="lessons__img" src="img/Mask group.png" alt="vidio">
+
+                <div class="lessons__item-inner">
+                  <span class="lessons__item-num">Lesson 2</span>
+
+                  <hr class="lessons__hr">
+                  <h4 class="lessons__item-title">
+                    Powerful mental tools to help you master tough subjects
+                  </h4>
+                  <p class="lessons__item-about">
+                    Lorem ipsum dolor sit amet consectetur. Elementum sed malesuada molestie facilisis enim lectus gravida. Proin vel egestas elementum erat accumsan non tortor est quis. Egestas tellus feugiat odio dictumst. Sit a enim suspendisse euismod.
+                  </p>
+                </div>
+              </li>
+
+              <!-- 3 -->
+              <li class="lessons__item">
+                <img class="lessons__img" src="img/Mask group.png" alt="vidio">
+
+                <div class="lessons__item-inner">
+                  <span class="lessons__item-num">Lesson 3</span>
+
+                  <hr class="lessons__hr">
+                  <h4 class="lessons__item-title">
+                    Powerful mental tools to help you master tough subjects
+                  </h4>
+                  <p class="lessons__item-about">
+                    Lorem ipsum dolor sit amet consectetur. Elementum sed malesuada molestie facilisis enim lectus gravida. Proin vel egestas elementum erat accumsan non tortor est quis. Egestas tellus feugiat odio dictumst. Sit a enim suspendisse euismod.
+                  </p>
+                </div>
+              </li>
+
+              <!-- 4 -->
+              <li class="lessons__item">
+                <img class="lessons__img" src="img/Mask group.png" alt="vidio">
+                <div class="lessons__item-inner">
+                  <span class="lessons__item-num">Lesson 4</span>
+
+                  <hr class="lessons__hr">
+
+                  <h4 class="lessons__item-title">
+                    Powerful mental tools to help you master tough subjects
+                  </h4>
+                  <p class="lessons__item-about">
+                    Lorem ipsum dolor sit amet consectetur. Elementum sed malesuada molestie facilisis enim lectus gravida. Proin vel egestas elementum erat accumsan non tortor est quis. Egestas tellus feugiat odio dictumst. Sit a enim suspendisse euismod.
+                  </p>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </section>
+
+        <!-- ACCORDION -->
+        <section class="accordion" id="accordion">
+          <div class="accordion__container container df">
+            <h3 class="accordion__title">Frequently asked questions</h3>
+
+            <div class="accordion__wrapper">
+
+              <div class="accordion__img-wrapper">
+                <img class="accordion__img" src="img/accordion-img.png" alt="accordion-img" draggable="false">
+              </div>
+
+              <div class="accordion__inner">
+
+                <!-- 1 -->
+                <div class="accordion__content active">
+                  <div class="accordion__question">
+                    <span class="accordion__num">01</span>
+                    <h4 class="accordion__question-title">Where can I watch?</h4>
+                    <div class="accordion__icon-wrapper df">
+                      <svg class="accordion__icon" xmlns="http://www.w3.org/2000/svg" width="10" height="9" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M5.864.338H4.632v3.696H.936v1.232h3.696v3.697h1.232V5.266h3.697V4.034H5.864V.338Z" clip-rule="evenodd"/></svg>
+                    </div>
+                  </div>
+                  <div class="accordion__answer">
+                    <p class="accordion__answer-text">
+                      Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla. Orci, dictumst nec aliquet id ullamcorper venenatis. Fermentum sulla craspor ttitore  ismod nulla.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="accordion__content">
+                  <div class="accordion__question">
+                    <span class="accordion__num">02</span>
+                    <h4 class="accordion__question-title">Where can I watch?</h4>
+                    <div class="accordion__icon-wrapper df">
+                      <svg class="accordion__icon" xmlns="http://www.w3.org/2000/svg" width="10" height="9" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M5.864.338H4.632v3.696H.936v1.232h3.696v3.697h1.232V5.266h3.697V4.034H5.864V.338Z" clip-rule="evenodd"/></svg>
+                    </div>
+                  </div>
+                  <div class="accordion__answer">
+                    <p class="accordion__answer-text">
+                      Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla. Orci, dictumst nec aliquet id ullamcorper venenatis. Fermentum sulla craspor ttitore ismod nulla.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="accordion__content">
+                  <div class="accordion__question">
+                    <span class="accordion__num">03</span>
+                    <h4 class="accordion__question-title">Where can I watch?</h4>
+                    <div class="accordion__icon-wrapper df">
+                      <svg class="accordion__icon" xmlns="http://www.w3.org/2000/svg" width="10" height="9" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M5.864.338H4.632v3.696H.936v1.232h3.696v3.697h1.232V5.266h3.697V4.034H5.864V.338Z" clip-rule="evenodd"/></svg>
+                    </div>
+                  </div>
+                  <div class="accordion__answer">
+                    <p class="accordion__answer-text">
+                      Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla. Orci, dictumst nec aliquet id ullamcorper venenatis. Fermentum sulla craspor ttitore ismod nulla.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="accordion__content">
+                  <div class="accordion__question">
+                    <span class="accordion__num">04</span>
+                    <h4 class="accordion__question-title">Where can I watch?</h4>
+                    <div class="accordion__icon-wrapper df">
+                      <svg class="accordion__icon" xmlns="http://www.w3.org/2000/svg" width="10" height="9" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M5.864.338H4.632v3.696H.936v1.232h3.696v3.697h1.232V5.266h3.697V4.034H5.864V.338Z" clip-rule="evenodd"/></svg>
+                    </div>
+                  </div>
+                  <div class="accordion__answer">
+                    <p class="accordion__answer-text">
+                      Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla. Orci, dictumst nec aliquet id ullamcorper venenatis. Fermentum sulla craspor ttitore ismod nulla.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </section>
+
+        <!-- SOCIALS -->
+        <section class="socials" id="socials">
+          <div class="socials__container container">
+            <div class="socials__list df">
+
+              <!-- ITEM-1 -->
+              <div class="socials__item df socials__item1">
+                <div class="socials__icon-wrapper socials__icon-wrapper1 df">
+                  <img class="socials__icon" src="img/linkedin.svg" alt="" width="35" height="35">
+                </div>
+                <a class="socials__link" href="#">Lorem ipsum dolor sit amet</a>
+              </div>
+
+              <!-- ITEM-2 -->
+              <div class="socials__item df socials__item2">
+                <div class="socials__icon-wrapper socials__icon-wrapper2 df">
+                  <img class="socials__icon" src="img/email.svg" alt="" width="35" height="35">
+                </div>
+                <a class="socials__link" href="#">Lorem ipsum dolor sit amet</a>
+              </div>
+
+              <!-- ITEM-3 -->
+              <div class="socials__item df socials__item3">
+                <div class="socials__icon-wrapper socials__icon-wrapper3 df">
+                  <img class="socials__icon" src="img/telegram.svg" alt="" width="35" height="35">
+                </div>
+                <a class="socials__link" href="https://t.me/Abdullokh_dev">Abdullokh_dev</a>
+              </div>
+
+              <!-- ITEM-4 -->
+              <div class="socials__item df socials__item4">
+                <div class="socials__icon-wrapper socials__icon-wrapper4 df">
+                  <img class="socials__icon" src="img/whatsapp.svg" alt="" width="35" height="35">
+                </div>
+                <a class="socials__link" href="#">Lorem ipsum dolor sit amet</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- SITE-FOOTER -->
+      <footer class="site-footer">
+        <div class="site-footer__container df container">
+
+          <svg class="site-footer__logo" xmlns="http://www.w3.org/2000/svg" width="124" height="44" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M0 44.183h11.85l44.745-31.477V37.09l-10.772-4.965-6.05 4.345 22.788 10.995h3.67l58.542-41.295h-12.271L62.672 41.45l-.11.174V.382L0 44.182Zm95.604-11.958 5.715-3.711 26.767 18.763h-11.577L95.604 32.224Z" clip-rule="evenodd"/></svg>
+
+          <ul class="site-footer__list df">
+
+            <li class="site-footer__item">
+              <a class="site-footer__link" href="#skills">Skills</a>
+            </li>
+
+            <li class="site-footer__item">
+              <a class="site-footer__link" href="#experience">Experience</a>
+            </li>
+
+            <li class="site-footer__item">
+              <a class="site-footer__link" href="#courses">Courses</a>
+            </li>
+
+            <li class="site-footer__item">
+              <a class="site-footer__link" href="#projects">Projects</a>
+            </li>
+
+            <li class="site-footer__item">
+              <a class="site-footer__link" href="#road">Roadmap</a>
+            </li>
+
+            <li class="site-footer__item">
+              <a class="site-footer__link" href="#blog">Blog</a>
+            </li>
+
+            <li class="site-footer__item">
+              <a class="site-footer__link" href="#lessons">Lesson</a>
+            </li>
+
+          </ul>
+
+          <hr class="site-footer__hr">
+
+          <div class="site-footer__bottom">
+
+            <p class="site-footer__bottom-info">
+              Lorem ipsum dolor sit amet consectetur. Leo aliquam pulvinar .
+            </p>
+
+            <span class="site-footer__author">Designed by Abdullokh</span>
+          </div>
+
+        </div>
+      </footer>
+
+
+      <script src="js/main.js"></script>
+    </body>
+    </html>
